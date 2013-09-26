@@ -11,7 +11,7 @@ from scapy.all import IP, TCP, sr1
 def OSbyWindowSize(window_size, ttl):
 	return {
 		"4128" : lambda ttl:
-			"iOS 12.4 (Cisco Router)",
+			"IOS 12.4 (Cisco Router)",
 		"5720" : lambda ttl:
 			"Google Linux",
 		"5840" : lambda ttl:
@@ -50,7 +50,7 @@ for port in common_ports:
 	tcp.dport = port
 	tcp.flags = "S"
 
-	print "Trying port %d..." % port
+	print "Trying port %d" % port
 
 	# send the packet and wait 2 seconds for an answer
 	rcv_pkt = sr1(ip/tcp, timeout = 2, verbose = 0)
