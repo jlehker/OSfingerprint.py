@@ -1,6 +1,8 @@
 #!/bin/sh
 #!/bin/bash
 
+#testing commit
+
 # Tell the user what you're doing. Nobody with an ounce of caution
 # should just randomly give out root access without knowing what
 # it will be used for. Also, the su prompt simply says "Password",
