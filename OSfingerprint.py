@@ -13,7 +13,6 @@ logging.getLogger('scapy.runtime').setLevel(logging.ERROR)
 
 from scapy.all import IP, TCP, sr1
 
-
 # return name for OS based on TCP window size and TTL
 
 def OSbyWindowSize(window_size, ttl):
