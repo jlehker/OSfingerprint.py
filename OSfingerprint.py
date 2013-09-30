@@ -15,6 +15,7 @@ from scapy.all import IP, TCP, sr1
 
 # return name for OS based on TCP window size and TTL
 
+
 def OSbyWindowSize(window_size, ttl):
     return {
         '4128': lambda ttl: 'IOS 12.4 (Cisco Router)',
@@ -25,7 +26,7 @@ def OSbyWindowSize(window_size, ttl):
                               > 64 else 'OpenBSD'),
         '65535': lambda ttl: ('Windows XP' if int(ttl)
                               > 64 else 'FreeBSD'),
-        }.get(window_size, lambda ttl: 'Unknown OS')(ttl)
+    }.get(window_size, lambda ttl: 'Unknown OS')(ttl)
 
 
 # make sure root privilege
@@ -61,7 +62,7 @@ common_ports = [
     445,
     8080,
     4567,
-    ]
+]
 
 # try each common port until one responds
 
