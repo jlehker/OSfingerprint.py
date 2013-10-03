@@ -13,10 +13,11 @@ logging.getLogger('scapy.runtime').setLevel(logging.ERROR)
 
 from scapy.all import IP, TCP, sr1
 
-# return name for OS based on TCP window size and TTL
 
+def os_by_window_size(window_size, ttl):
 
-def OSbyWindowSize(window_size, ttl):
+    # return name for OS based on TCP window size and TTL
+
     return {
         '4128': lambda ttl: 'IOS 12.4 (Cisco Router)',
         '5720': lambda ttl: 'Google Linux',
@@ -62,7 +63,7 @@ common_ports = [
     445,
     8080,
     4567,
-]
+    ]
 
 # try each common port until one responds
 
@@ -103,9 +104,11 @@ window_size = rcv_pkt.sprintf('%TCP.window%')
 
 ttl = rcv_pkt.sprintf('%IP.ttl%')
 
+print "window size", window_size
+
 # get OS name
 
-os_name = OSbyWindowSize(window_size, ttl)
+os_name = os_by_window_size(window_size, ttl)
 
 # display the result
 
