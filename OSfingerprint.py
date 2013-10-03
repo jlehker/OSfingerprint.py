@@ -22,6 +22,7 @@ def os_by_window_size(window_size, ttl):
         '4128': lambda ttl: 'IOS 12.4 (Cisco Router)',
         '5720': lambda ttl: 'Google Linux',
         '5840': lambda ttl: 'Linux 2.4',
+        '14600': lambda ttl: 'Linux 3.x',
         '8192': lambda ttl: 'Windows 7',
         '16384': lambda ttl: ('Windows Server 2003' if int(ttl)
                               > 64 else 'OpenBSD'),
@@ -63,7 +64,7 @@ common_ports = [
     445,
     8080,
     4567,
-    ]
+]
 
 # try each common port until one responds
 
