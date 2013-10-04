@@ -1,7 +1,7 @@
 #!/bin/sh
 #dd!/bin/bash
 
-#testing vim plugin
+#testing vim plugin2
 
 # Tell the user what you're doing. Nobody with an ounce of caution
 # should just randomly give out root access without knowing what
