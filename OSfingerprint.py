@@ -63,7 +63,7 @@ common_ports = [
     110,    # pop3
     445,    # ms-ds
     8080,   # tomcat
-    4567,   # idk?
+    4567,   # filenail (commonly open port for backdoors)
 ]
 
 # try each common port until one responds
