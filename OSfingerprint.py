@@ -48,22 +48,22 @@ target_ip = sys.argv[1]
 # most commonly open ports
 
 common_ports = [
-    80,
-    22,
-    21,
-    135,
-    139,
-    143,
-    1723,
-    3389,
-    25,
-    23,
-    53,
-    443,
-    110,
-    445,
-    8080,
-    4567,
+    80,     # http
+    22,     # ssh
+    21,     # ftp
+    135,    # dcom-smc
+    139,    # netbios
+    143,    # imap
+    1723,   # pptp
+    3389,   # rdp
+    25,     # smtp
+    23,     # telnet
+    53,     # dns
+    443,    # https
+    110,    # pop3
+    445,    # ms-ds
+    8080,   # tomcat
+    4567,   # filenail (commonly open port for backdoors)
 ]
 
 # try each common port until one responds
