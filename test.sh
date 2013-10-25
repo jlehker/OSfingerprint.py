@@ -1,5 +1,4 @@
 #!/bin/sh
-#!/bin/bash
 
 # Tell the user what you're doing. Nobody with an ounce of caution
 # should just randomly give out root access without knowing what
