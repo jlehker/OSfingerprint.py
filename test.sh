@@ -1,8 +1,6 @@
 #!/bin/sh
 #!/bin/bash
 
-#testing commit
-
 # Tell the user what you're doing. Nobody with an ounce of caution
 # should just randomly give out root access without knowing what
 # it will be used for. Also, the su prompt simply says "Password",
@@ -23,6 +21,9 @@ sudo python OSfingerprint.py sefm.cs.utsa.edu
 
 echo "\nOSfingerprint.py elk04.cs.utsa.edu"
 sudo python OSfingerprint.py elk04.cs.utsa.edu
+
+echo "\nOSfingerprint.py slavin.info"
+sudo python OSfingerprint.py slavin.info
 
 # Give up root access immediately after you're done performing the
 # copies. This should return the process to a regular user
