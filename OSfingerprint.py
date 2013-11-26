@@ -45,6 +45,11 @@ if len(sys.argv) < 2:
 
 target_ip = sys.argv[1]
 
+# check if localhost
+
+if target_ip == "localhost" or target_ip == "127.0.0.1":
+    sys.exit('OS is probably %s' % sys.platform)
+
 # most commonly open ports
 
 common_ports = [
@@ -108,7 +113,6 @@ ttl = rcv_pkt.sprintf('%IP.ttl%')
 print "window size", window_size
 
 # get OS name
-
 os_name = os_by_window_size(window_size, ttl)
 
 # display the result
