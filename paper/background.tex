@@ -1,6 +1,8 @@
 \section{Background}
-Start by talking about the attacker's process
-\begin{itemize}
+
+The attacker's process involves a range of phases from reconnaissance to exploitation and finally the eluding of pursuers. Specifically, Cole describes the attackers process as~\cite{Cole02}:
+
+\begin{enumerate}
 	\item Passive Reconnaissance
 	\item Active Reconnaissance
 	\item Exploiting the System
@@ -8,11 +10,15 @@ Start by talking about the attacker's process
 	\item Downloading data
 	\item Keeping access by backdoors and trojans
 	\item Covering tracks
-\end{itemize}
+\end{enumerate}
 
-\subsection{Passive Reconnaissance}
-Explain what it's used for.
-Give a scenario
+The use of an OS fingerprinter falls into the phase of active reconnaissance where the attacker attempts to gain knowledge about the system. 
+
+\subsection{Active Reconnaissance}
+Active reconnaissance is one of the first steps in the attack. Preceded by passive reconnaissance in which the attacker does not actually engage the system, active reconnaissance is a phase in which information is gathered. This means that exploits do not necessarily need to be taken advantage of. In section 3 we explain how the OS fingerprinter takes advantage of existing traits that aren't necessarily vulnerabilities.
+
+The OS fingerprinter allows the attacker to know a little bit about the system before they begin their exploits. An attacker can get an idea of the range of exploits that may exist just by narrowing down the target machine's operating system. With the machine's operating system known (or guessed), databases of existing vulnerabilities such as Metasploit~\cite{Metasploit1} or OSVDB~\cite{OSVDB1}, or even a quick Google search, can be referenced to plan an attack.
+
 
 \subsection{Legitimate Uses}
-Find some uses that aren't for attacking
+This paper focuses on 
