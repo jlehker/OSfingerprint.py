@@ -1,9 +1,0 @@
-\section{Conclusion}
-
-With a basic understanding of the TCP/IP protocol suite it is possible to identify, or make well-informed guesses on, the operating system of a computer over the Internet. Our method involved using an existing packet manipulator and decoder to analyze packets that are freely passed over a network. By using the Python programming language, we were able to assure cross-platform compatibility.
-
-The development of this tool was valuable in learning about the attacker's mentality as well as what constitutes, or does not constitute, a vulnerability. In our case, we took advantage of the use of default packet settings (i.e., time-to-live and window size). Such settings are easy to overlook. Even though an existing condition does not create a direct hole for an intruder to access a system, it may, as in our case, allow the attacker to gain enough knowledge to start the attack process.
-
-We also found that creating such tools is not as hard as imagined. With liberal comments, our implementation was only 120 lines of code. Furthermore, it was easy to use. Assuming other tools are similarly difficult to implement and operate, little knowledge is required to launch an attack.
-
-Overall, this project taught us that network security is a vital part of information technology. Tools such as the OS fingerprinter allow attackers to more easily violate systems with even limited knowledge. By implementing this tool, we gained insight into not only how attackers work, but in what ways can we defend against them.
